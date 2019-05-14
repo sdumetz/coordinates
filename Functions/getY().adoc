@@ -1,0 +1,49 @@
+= getY()
+
+=== Description
+
+Reads the _Y_-coordinate of the point.
+
+=== Syntax
+
+`getY()`
+
+=== Parameters
+
+Nothing
+
+=== Returns
+
+`y`: the _Y_-coordinate of the point, (`float`)
+
+=== Example
+
+[source, cpp]
+----
+
+#include <Coordinates.h>
+Coordinates point = Coordinates();
+void setup() {
+  //put your setup code here, to run once
+  Serial.begin(9600);
+  float y;
+  y = point.getY();
+  Serial.print("y: ");
+  Serial.println(y);
+}
+
+void loop() {}
+
+----
+
+=== See Also
+
+* link:/Functions/fromCartesian().adoc[fromCartesian()]
+
+* link:/Functions/fromPolar().adoc[fromPolar()]
+
+* link:/Functions/getAngle().adoc[getAngle()]
+
+* link:/Functions/getR().adoc[getR()]
+
+* link:/Functions/getX().adoc[getX()]
