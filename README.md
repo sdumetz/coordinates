@@ -58,7 +58,7 @@ You can install **Coordinates** in either of the two ways depending on how you a
 
   * Go to **Favorites** section inside the **Libraries** tab and search for '*Coordinates*'.
 
-  * Hover the mouse over it and click **Include** or just type "`#include <Coorinates.h>`"
+  * Hover the mouse over it and click **Include** or just type "`#include <Coordinates.h>`"
 
      in your 'Sketch'.
 
