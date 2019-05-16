@@ -1,26 +1,34 @@
 #######################################
-# Syntax Coloring Map Coordinates
+
+Syntax Coloring Map Coordinates
+
 #######################################
 
 #######################################
-# Class (KEYWORD1)
-#######################################
 
-Coordinates KEYWORD1
+Class (KEYWORD1)
 
 #######################################
-# Methods and Functions (KEYWORD2)
-#######################################
 
-fromCartesian   KEYWORD2
-fromPolar   KEYWORD2
-getAngle    KEYWORD2
-getR    KEYWORD2
-getX    KEYWORD2
-getY    KEYWORD2	
+Coordinates	KEYWORD1
 
 #######################################
-# Constants (LITERAL1)
+
+Methods and Functions (KEYWORD2)
+
 #######################################
 
-PI LITERAL1
+fromCartesian	KEYWORD2
+fromPolar	KEYWORD2
+getAngle	KEYWORD2
+getR	KEYWORD2
+getX	KEYWORD2
+getY	KEYWORD2	
+
+#######################################
+
+Constants (LITERAL1)
+
+#######################################
+
+PI  LITERAL1
