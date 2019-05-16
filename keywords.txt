@@ -1,21 +1,15 @@
 #######################################
-
-Syntax Coloring Map Coordinates
-
+# Syntax Coloring Map Coordinates
 #######################################
 
 #######################################
-
-Class (KEYWORD1)
-
+# Class (KEYWORD1)
 #######################################
 
 Coordinates	KEYWORD1
 
 #######################################
-
-Methods and Functions (KEYWORD2)
-
+# Methods and Functions (KEYWORD2)
 #######################################
 
 fromCartesian	KEYWORD2
@@ -26,9 +20,7 @@ getX	KEYWORD2
 getY	KEYWORD2	
 
 #######################################
-
-Constants (LITERAL1)
-
+# Constants (LITERAL1)
 #######################################
 
-PI  LITERAL1
+PI	LITERAL1
