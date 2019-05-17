@@ -1,0 +1,58 @@
+= fromCartesian()
+
+=== Description
+
+Converts location of a point specified in Cartesian coordinates into Polar coordinates.
+
+=== Syntax
+
+`fromCartesian(x, y)`
+
+=== Parameters
+
+`x`: the _X_-coordinate, (`float`) 
+
+`y`: the _Y_-coordinate, (`float`)
+
+=== Returns
+
+Nothing
+
+=== Example
+
+[source, cpp]
+----
+
+#include <Coordinates.h>
+Coordinates point = Coordinates();
+void setup() {
+  Serial.begin(9600);
+  float x = 1.0;
+  float y = 1.0;
+  Serial.print("x: ");
+  Serial.println(x);
+  Serial.print("y: ");
+  Serial.println(y);
+  point.fromCartesian(x, y);
+  Serial.print("r: ");
+  Serial.println(point.getR());
+  Serial.print("φ: ");
+  Serial.print(point.getAngle());
+  Serial.println(" rad");
+}
+
+void loop() {}
+
+----
+
+=== See also
+
+* link:/Functions/fromPolar().adoc[fromPolar()]
+
+* link:/Functions/getAngle().adoc[getAngle()]
+
+* link:/Functions/getR().adoc[getR()]
+
+* link:/Functions/getX().adoc[getX()]
+
+* link:/Functions/getY().adoc[getY()]

@@ -8,13 +8,21 @@
 class Coordinates {
   public:
     // start value, start speed, update confidence, evolution confidence
-    Coordinates(float x=0, float y=0);
+    Coordinates(float x = 0, float y = 0);
     void fromCartesian(float x, float y);
     void fromPolar(float r, float phi);
-    float getR(){return r;};
-    float getAngle(){return phi;};
-    float getX(){return x;};
-    float getY(){return y;};
+    float getR() {
+      return r;
+    };
+    float getAngle() {
+      return phi;
+    };
+    float getX() {
+      return x;
+    };
+    float getY() {
+      return y;
+    };
   private:
     float r;
     float phi;

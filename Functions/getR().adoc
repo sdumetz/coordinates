@@ -1,0 +1,49 @@
+= getR()
+
+=== Description
+
+Reads the radial coordinate of the point. 
+
+=== Syntax
+
+`getR()`
+
+=== Parameters
+
+Nothing
+
+=== Returns
+
+`r`: the radial coordinate of the point (`float`)
+
+=== Example
+
+[source,cpp]
+----
+
+# include <Coordinates.h>
+Coordinates point = Coordinates();
+void setup() {
+  // put your setup code here, to run once
+  Serial.begin(9600);
+  float r;
+  r = point.getR();
+  Serial.print("r: ");
+  Serial.println(r);
+}
+
+void loop() {}
+
+----
+
+=== See also
+
+* link:/Functions/fromCartesian().adoc[fromCartesian()]
+
+* link:/Functions/fromPolar().adoc[fromPolar()]
+
+* link:/Functions/getAngle().adoc[getAngle()]
+
+* link:/Functions/getX().adoc[getX()]
+
+* link:/Functions/getY().adoc[getY()]

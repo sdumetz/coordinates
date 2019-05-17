@@ -1,0 +1,51 @@
+= getAngle()
+
+=== Description
+
+Reads the angular coordinate of the point in radians.
+
+=== Syntax
+
+`getAngle()`
+
+=== Parameters
+
+Nothing
+
+=== Returns
+
+`phi`: the angular coordinate of the point in radians (`float`)
+
+=== Example
+
+[source,cpp]
+----
+
+# include <Coordinates.h>
+Coordinates point = Coordinates();
+void setup() {
+  // put your setup code here, to run once
+  Serial.begin(9600);
+  float phi;
+  phi = point.getAngle();
+  Serial.print("φ: ");
+  Serial.println(phi);
+  Serial.println(" rads");
+}
+
+void loop() {}
+
+----
+
+
+=== See also
+
+* link:/Functions/fromCartesian().adoc[fromCartesian()]
+
+* link:/Functions/fromPolar().adoc[fromPolar()]
+
+* link:/Functions/getR().adoc[getR()]
+
+* link:/Functions/getX().adoc[getX()]
+
+* link:/Functions/getY().adoc[getY()]

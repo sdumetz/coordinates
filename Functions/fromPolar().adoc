@@ -1,0 +1,59 @@
+= fromPolar()
+
+
+=== Description
+
+Converts location of a point specified in Polar coordinates into Cartesian coordinates.
+
+=== Syntax
+
+`fromPolar(r, phi)`
+
+=== Parameters
+
+`r`: the radial coordinate r, (`float`)
+
+`phi`: the angular coordinate phi, (`float`)
+
+=== Returns
+
+Nothing
+
+=== Example
+
+[source, cpp]
+----
+
+#include <Coordinates.h>
+Coordinates point = Coordinates();
+void setup() {
+  Serial.begin(9600);
+  float r = 1.41;
+  float phi = 3.14159 / 4; // angle = pi / 4 radians
+  Serial.print("r: ");
+  Serial.println(r);
+  Serial.print("φ: ");
+  Serial.println(phi);
+  Serial.println(" rad");
+  point.fromPolar(r, phi);
+  Serial.print("x: ");
+  Serial.println(point.getX());
+  Serial.print("y: ");
+  Serial.print(point.getY());
+}
+
+void loop() {}
+
+----
+
+=== See also
+
+* link:/Functions/fromCartesian().adoc[fromCartesian()]
+
+* link:/Functions/getAngle().adoc[getAngle()]
+
+* link:/Functions/getR().adoc[getR()]
+
+* link:/Functions/getX().adoc[getX()]
+
+* link:/Functions/getY().adoc[getY()]
